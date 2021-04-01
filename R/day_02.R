@@ -82,7 +82,7 @@ ggsave(
 
 ggsave(
     file = here::here("img", "tests",
-                      paste("day_1",
+                      paste("day_2",
                             paste(paste(
                                 gsub("-", "", str_sub(Sys.time(), 1, 10)),
                                 gsub(":", "", str_sub(Sys.time(), 12, 19)), sep = "_"),
