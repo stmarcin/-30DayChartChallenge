@@ -1,0 +1,5 @@
+sources of icons:
+iconmonstr-car-1 https://iconmonstr.com/car-1-svg/
+iconmonstr-car-5 https://iconmonstr.com/car-5-svg/
+
+Licences: https://iconmonstr.com/license/

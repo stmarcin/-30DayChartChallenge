@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # my files
 *.Rproj
+R/tests/
+Rmd/
+img/tests/
