@@ -31,7 +31,8 @@ df %>%
               family = "Ebrima",
               size = 10, color = "white", fontface = "bold") +
     labs(
-        title = "How Warsaw residents move"
+        title = "How Warsaw residents move",
+        caption = "Visualisation: Marcin Stepniak  •  Data source: Warsaw Traffic Study (2015)"
     ) +
     scale_fill_manual(values = color_media) +
     coord_cartesian(clip = "off") +
@@ -51,7 +52,13 @@ df %>%
             ),
         plot.background = element_rect(
             fill = "#fef7ee", 
-            color = "#fef7ee")
+            color = "#fef7ee"),
+        plot.caption = element_text(
+            family="Ebrima",
+            size = 12,
+            hjust = 0.93,
+            margin = margin(b = 5)
+            )
     )
 
 # export to png
