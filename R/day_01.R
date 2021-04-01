@@ -34,7 +34,7 @@ df %>%
         title = "How Warsaw residents move"
     ) +
     scale_fill_manual(values = color_media) +
-    coord_equal(clip = 'off') +
+    coord_cartesian(clip = "off") +
     theme_void() +
     theme(
         legend.position = "none",
