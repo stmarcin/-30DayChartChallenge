@@ -10,17 +10,17 @@ theme_set(theme_void(base_family = "Consolas"))
 
 # Data and symbols
 df <- tibble(
-    x = rep(seq(0, 14*0.3, 0.3), each=10),
-    y = rep(seq(0, 9*0.2, 0.2), 15),
+    x = c(rep(seq(0, 14*0.3, 0.3), each=10), rep(4.5, 4) ),
+    y = c(rep(seq(0, 9*0.2, 0.2), 15), seq(0, 0.6, 0.2)),
     image = c(rep(here::here("data", "icons", "iconmonstr-car-5.png"), 5),
-              rep(here::here("data", "icons", "iconmonstr-car-1.png"), 145)) ) %>% 
+              rep(here::here("data", "icons", "iconmonstr-car-1.png"), 149)) ) %>% 
     mutate(y = ifelse(image == here::here("data", "icons", "iconmonstr-car-5.png"), 
                       y + 0.015, y))
 
 # Legend 
 legend <- tibble(
     x = -0.15,
-    y = -0.15,
+    y = -0.12,
     label = "Each symbol represents **100 000** registered cars"
     )
 
