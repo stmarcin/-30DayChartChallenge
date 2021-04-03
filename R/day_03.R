@@ -98,12 +98,7 @@ ggsave(file = here::here("img", "day_3.png"),
        dpi = 600
 )
 
-ggsave(file = here::here("img", "tests", "day_3", "day_3.svg"),
-                             height = 6,
-                             width = 16,
-                             units = "cm",
-                             dpi = 600
-                         )
+# temporary -----------------------------------------------------------------------------------
 
 # ggsave(
 #     file = here::here("img", "tests", "day_3",
@@ -124,6 +119,7 @@ ggsave(file = here::here("img", "tests", "day_3", "day_3.svg"),
 #        units = "cm",
 #        dpi = 600
 # )
+
 
 
 
