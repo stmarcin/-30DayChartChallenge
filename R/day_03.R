@@ -1,8 +1,6 @@
 library(tidyverse)
 library(ggforce)
 library(ggthemes)
-# library(maps)
-# library(eurostat)
 library(ggtext)
 library(extrafont)
 loadfonts(device = "win")
@@ -25,8 +23,6 @@ line_for_name <- tibble(
     x = line_to_point$xend,
     y = line_to_point$yend) %>% 
     mutate(xend = x - 12) 
-
-# col_background <- "#ffdf80"
 
 theme_set(theme_solid(fill = "#ffdf80") )
           
