@@ -110,25 +110,25 @@ ggsave(file = here::here("img", "tests", "day_3", "day_3.svg"),
                              dpi = 600
                          )
 
-ggsave(
-    file = here::here("img", "tests", "day_3",
-                      paste("day_3",paste(paste(
-                          gsub("-", "", str_sub(Sys.time(), 1, 10)),
-                          gsub(":", "", str_sub(Sys.time(), 12, 19)), sep = "_"),
-                          "png", sep = "."), sep = "_")),
-    height = 6,
-    width = 16,
-    units = "cm",
-    dpi = 600
-)
-
-    
-ggsave(file = here::here("img", "day_3.png"), 
-       height = 6,
-       width = 16,
-       units = "cm",
-       dpi = 600
-)
+# ggsave(
+#     file = here::here("img", "tests", "day_3",
+#                       paste("day_3",paste(paste(
+#                           gsub("-", "", str_sub(Sys.time(), 1, 10)),
+#                           gsub(":", "", str_sub(Sys.time(), 12, 19)), sep = "_"),
+#                           "png", sep = "."), sep = "_")),
+#     height = 6,
+#     width = 16,
+#     units = "cm",
+#     dpi = 600
+# )
+# 
+#     
+# ggsave(file = here::here("img", "day_3.png"), 
+#        height = 6,
+#        width = 16,
+#        units = "cm",
+#        dpi = 600
+# )
 
 
 
