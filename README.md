@@ -12,7 +12,12 @@ Repository for #30DayChartChallenge 2021
 
 ![](img/day_2.png)
 
+## Day 3: Historical
+
+![](img/day_3.png)
+
 ## R code
 
 + [Day 1](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_01.R)
 + [Day 2](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_02.R)
++ [Day 3](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_03.R)
