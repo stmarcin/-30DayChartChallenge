@@ -43,4 +43,5 @@ vignettes/*.pdf
 R/tests/
 Rmd/
 img/tests/
-*.xlsx
+comments/
+data/temp
