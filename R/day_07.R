@@ -19,9 +19,19 @@ p1 <- ggplot(data = df) +
             ymax = ymax
         ),
         fill = "#fffa6e",
-        color = "#FFD700",
-        size = 0.1,
+        color = NA,
+        # size = 0.1,
         alpha = 0.02) +
+    geom_rect(
+        aes(
+            xmin = xmin,
+            xmax = xmax,
+            ymin = ymin,
+            ymax = ymax
+        ),
+        fill = NA,
+        color = "#FFD700",
+        size = 0.15) +
     scale_x_continuous(limits = c(0,40),
                        expand = c(0, 0)) +
     scale_y_continuous(limits = c(0,40),
@@ -92,7 +102,7 @@ px + pn + p1 + py + plot_layout(design = design,
                           margin = margin(t = 3, b = 3, unit = "mm")),
                       plot.subtitle = element_markdown(
                           family = "Ebrima",
-                          size = 5.5,
+                          size = 6,
                           color = "#fffdc5",
                           hjust = 0,
                           lineheight = 1.5,
@@ -107,15 +117,16 @@ px + pn + p1 + py + plot_layout(design = design,
         )
 
 # 
-# ggsave(file = here::here("img", "tests", "day_7.svg"),
+# ggsave(file = here::here("img", "day_7.svg"),
 #        height = 14,
 #        width = 12,
 #        units = "cm",
-#        dpi = 600
-# )
+#        dpi = 600)
 
 ggsave(file = here::here("img", "day_7.png"),
        height = 14,
        width = 12,
        units = "cm",
        dpi = 600)
+
+

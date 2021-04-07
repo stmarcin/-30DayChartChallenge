@@ -6,8 +6,6 @@ Repository for #30DayChartChallenge 2021
 
 ![](img/day_1.png)
 
-
-
 ## Day 2: Pictogram
 
 ![](img/day_2.png)
@@ -24,6 +22,14 @@ Repository for #30DayChartChallenge 2021
 
 ![](img/day_5.png)
 
+## Day 6: Experimental
+
+![](img/day_6.png)
+
+## Day 7: Physical
+
+![](img/day_7.png)
+
 ## R code
 
 + [Day 1](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_01.R)
@@ -31,3 +37,5 @@ Repository for #30DayChartChallenge 2021
 + [Day 3](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_03.R)
 + [Day 4](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_04.R)
 + [Day 5](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_05.R)
++ [Day 6](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_06_wip.R) 
++ [Day 7](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_07.R)
