@@ -30,6 +30,11 @@ Repository for #30DayChartChallenge 2021
 
 ![](img/day_7.png)
 
+## Day 9: Statistics
+
+![](img/day_9.png)
+
+
 ## R code
 
 + [Day 1](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_01.R)
@@ -39,3 +44,4 @@ Repository for #30DayChartChallenge 2021
 + [Day 5](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_05.R)
 + [Day 6](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_06_wip.R) 
 + [Day 7](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_07.R)
++ [Day 9](https://github.com/stmarcin/30DayChartChallenge/blob/main/R/day_09.R)
