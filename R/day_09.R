@@ -12,7 +12,7 @@ set.seed(1234)
 
 df <- readxl::read_excel(here::here("data", "day_7_games.xlsx")) %>% 
     filter(!is.na(avg_rating)) %>% 
-    mutate(y = runif(21, 0.2, 1))
+    mutate(y = runif(21, 0.2, 0.8))
 
 # df_text <- tibble(
 #     x = c(10.2), 
@@ -28,14 +28,14 @@ df <- readxl::read_excel(here::here("data", "day_7_games.xlsx")) %>%
 
 px <- ggplot(data = df,
        aes(x = avg_rating, y = y)) +
-    geom_boxplot(data = df,
-                 aes(avg_rating, y = 0.5),
-                 stat = "boxplot",
-                 width=0.5,
-                 outlier.colour = NA,
-                 fill = NA, 
-                 color = "#999999",
-                 size = 0.1) +
+    # geom_boxplot(data = df,
+    #              aes(avg_rating, y = 0.5),
+    #              stat = "boxplot",
+    #              width=0.5,
+    #              outlier.colour = NA,
+    #              fill = NA, 
+    #              color = "#999999",
+    #              size = 0.15) +
     geom_point_blur(size = 0.4, alpha = 0.3, aes(blur_size = num_votes), color = "#ffa500") +
     
     # geom_label(data = df_text,
@@ -56,7 +56,7 @@ px <- ggplot(data = df,
         size = 0.2) +
     scale_y_continuous(
         expand = c(0, 0),
-        limits = c(0, 1.5)
+        limits = c(0, 1)
         ) +
     scale_x_continuous(
         limits = c(0, 10),
@@ -82,8 +82,8 @@ px <- ggplot(data = df,
 # pt <- ggplot(data = )
 
 px + plot_annotation(
-    title = "Distribution of average rankings of **board games** from our collection",
-    subtitle = "Average rankings according to boardgamegeek.com<br>The size of the blurr shows the number of votes",
+    title = "Distribution of average ratings of **board games** from our collection",
+    subtitle = "Average ratings according to boardgamegeek.com<br>The size of the blurr shows the number of votes",
     caption = "Visualisation: Marcin Stepniak  •  Data: boardgamegeek.com",
     theme = theme(
         plot.background = element_rect(fill  = "#fff6e6", 
@@ -115,13 +115,13 @@ px + plot_annotation(
     ) 
 
 ggsave(file = here::here("img", "day_9.svg"),
-       height = 7,
+       height = 6,
        width = 12,
        units = "cm",
        dpi = 600)
     
 ggsave(file = here::here("img", "day_9.png"),
-       height = 7,
+       height = 6,
        width = 12,
        units = "cm",
        dpi = 600)
